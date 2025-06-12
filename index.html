@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancian Burguer - Cardápio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #ffb347 0%, #ffcc33 100%);
+            color: #222;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 32px 0 16px 0;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .menu-container {
+            max-width: 900px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+        }
+        .card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+            width: 270px;
+            padding: 28px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+        }
+        .card img {
+            width: 110px;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 18px;
+            border: 3px solid #ffb347;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            color: #d2691e;
+            font-size: 1.3rem;
+        }
+        .card p {
+            font-size: 1rem;
+            color: #444;
+            margin-bottom: 12px;
+        }
+        .price {
+            font-weight: bold;
+            color: #222;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        .order-btn {
+            background: #d2691e;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 28px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .order-btn:hover {
+            background: #a0521d;
+        }
+        @media (max-width: 700px) {
+            .menu-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cancian Burguer</h1>
+        <p>O melhor cardápio de hambúrgueres artesanais da cidade!</p>
+    </header>
+    <div class="menu-container">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80" alt="Classic">
+            <h3>Classic</h3>
+            <p>Pão brioche, hambúrguer 180g, queijo cheddar, alface, tomate e molho especial.</p>
+            <div class="price">R$ 24,90</div>
+            <button class="order-btn" onclick="alert('Pedido do Clássico Burger adicionado!')">Pedir</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Bacon Supreme">
+            <h3>Bacon Supreme</h3>
+            <p>Pão australiano, hambúrguer 200g, queijo prato, bacon crocante, cebola caramelizada.</p>
+            <div class="price">R$ 29,90</div>
+            <button class="order-btn" onclick="alert('Pedido do Bacon Supreme adicionado!')">Pedir</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Bello BUrguer">
+            <h3>Bello Burguer</h3>
+            <p>Pão integral, hambúrguer de grão-de-bico, queijo muçarela, rúcula, tomate seco.</p>
+            <div class="price">R$ 26,90</div>
+            <button class="order-btn" onclick="alert('Pedido do Veggie Delight adicionado!')">Pedir</button>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Duplo Smash">
+            <h3>Duplo Smash</h3>
+            <p>Pão de batata, dois smash burgers 90g, queijo cheddar duplo, picles e maionese da casa.</p>
+            <div class="price">R$ 32,90</div>
+            <button class="order-btn" onclick="alert('Pedido do Duplo Smash adicionado!')">Pedir</button>
+        </div>
+    </div>
+</body>
+</html> 
+
+
+
